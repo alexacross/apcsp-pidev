@@ -1,15 +1,10 @@
 #include <stdio.h>
 
-int main(void)
+void computerguess(int input, int guess)
 {
-	int i;
-	int input;
-	int guess;
-	printf("Choose a secret number from the following list: 1, 3, 6, 7, 12, 14, 15, 16, 25, 33, 34, 35, 37, 42, 43, 46, 48, or 49\n");
-	scanf("%d",&input);
 	int* ptrguess = &guess;
 	guess = 25;
-	if (input == 1 || input == 3)
+	if (input == 1 || input == 3 || input == 6 || input == 7 || input == 12 || input == 14 || input == 15 || input == 16 || input == 25 || input == 33 || input == 34 || input == 35 || input == 37 || input == 42 || input == 43 || input == 46 || input == 48 || input == 49 )
 	{
 	  	 while ( input != guess )
                         {
