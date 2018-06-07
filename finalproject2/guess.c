@@ -3,11 +3,13 @@
 
 int main(int argc, char* argv[])
 {
-  if (argc != 2)
+  if (argc != 1)
   {
     printf("%s : expected an argument, please enter an integer\n", argv[0]);
     return 1;
   }
+  else
+  {
 
   int arg1;
   int found = sscanf(argv[1], "%d", &arg1);
@@ -33,4 +35,5 @@ int main(int argc, char* argv[])
         {
                 printf("Please select a number from the list\n");
         }
+  }
 }
