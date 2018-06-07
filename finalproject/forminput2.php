@@ -4,7 +4,6 @@
     <title>Secret Number: Binary Searches</title>
   </head>
 
-
   <body>
 
     <h1>Guess a Number</h1>
@@ -16,7 +15,7 @@
 
        if ($_SERVER["REQUEST_METHOD"] == "POST") {
          $arg1 = test_input($_POST["arg1"]);
-         $result = system( "/usr/lib/cgi-bin/pi/argtest1 " . $arg1 .); 
+         $result = system( "/usr/lib/cgi-bin/student3/guess" . $arg1); 
        }
 
        function test_input($data) {
@@ -48,7 +47,7 @@
 	$arg1 = $result ="";
  if ($_SERVER["REQUEST_METHOD"] == "POST") {
          $arg1 = test_input($_POST["arg1"]);
-         $result = system( "/usr/lib/cgi-bin/pi/argtest1 " . $arg1 . " " .); 
+         $result = system( "/usr/lib/cgi-bin/student3/myprog " . $arg1); 
        }
 
        function test_input($data) {
